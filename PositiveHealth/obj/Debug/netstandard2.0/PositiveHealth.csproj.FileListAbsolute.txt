@@ -1,0 +1,9 @@
+C:\Users\antho\Documents\Visual Studio 2017\Projects\PositiveHealth\PositiveHealth\PositiveHealth\bin\Debug\netstandard2.0\PositiveHealth.deps.json
+C:\Users\antho\Documents\Visual Studio 2017\Projects\PositiveHealth\PositiveHealth\PositiveHealth\bin\Debug\netstandard2.0\PositiveHealth.dll
+C:\Users\antho\Documents\Visual Studio 2017\Projects\PositiveHealth\PositiveHealth\PositiveHealth\bin\Debug\netstandard2.0\PositiveHealth.pdb
+C:\Users\antho\Documents\Visual Studio 2017\Projects\PositiveHealth\PositiveHealth\PositiveHealth\obj\Debug\netstandard2.0\PositiveHealth.csprojAssemblyReference.cache
+C:\Users\antho\Documents\Visual Studio 2017\Projects\PositiveHealth\PositiveHealth\PositiveHealth\obj\Debug\netstandard2.0\PositiveHealth.csproj.CoreCompileInputs.cache
+C:\Users\antho\Documents\Visual Studio 2017\Projects\PositiveHealth\PositiveHealth\PositiveHealth\obj\Debug\netstandard2.0\PositiveHealth.AssemblyInfoInputs.cache
+C:\Users\antho\Documents\Visual Studio 2017\Projects\PositiveHealth\PositiveHealth\PositiveHealth\obj\Debug\netstandard2.0\PositiveHealth.AssemblyInfo.cs
+C:\Users\antho\Documents\Visual Studio 2017\Projects\PositiveHealth\PositiveHealth\PositiveHealth\obj\Debug\netstandard2.0\PositiveHealth.dll
+C:\Users\antho\Documents\Visual Studio 2017\Projects\PositiveHealth\PositiveHealth\PositiveHealth\obj\Debug\netstandard2.0\PositiveHealth.pdb

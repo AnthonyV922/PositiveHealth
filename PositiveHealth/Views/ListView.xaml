@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PositiveHealth.View.ListView">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ListViewItem" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="OnDelete" CommandParameter= "{Binding .}" Text="Delete" IsDestructive="True"/>
+                            </ViewCell.ContextActions>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal" Padding="15,10" HorizontalOptions="FillAndExpand">
+                                    <Entry x:Name="FoodEntry" Placeholder="Food" TextColor="Red"/>
+                                    <Entry x:Name="LabelEntry" Placeholder="Food Label" TextColor="Red"/>
+                                    <Entry x:Name="CalorieEntry" Placeholder="Calories" TextColor="Red"/>
+                                    <Button x:Name="PressButton" Clicked="OnAdd" Text="Add" TextColor="Red"/>
+                                    <Label HorizontalOptions="Start"
+                                           VerticalTextAlignment="Center"
+                                           Text="{Binding Name}"/>
+                                    <Label HorizontalOptions="CenterAndExpand"
+                                           VerticalTextAlignment="Center"
+                                           Text="{Binding Description}"/>
+                                    <Label HorizontalOptions="EndAndExpand"
+                                           VerticalTextAlignment="Center"
+                                           Text="{Binding Calories}"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

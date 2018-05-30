@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PositiveHealth.View.LoginView">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+            
+            <Label Text="Username" TextColor="Red"/>
+            <Entry x:Name="UsernameEntry" Text="{Binding Username}" Placeholder="Username"/>
+            
+            <Label Text="Password" TextColor="Blue"/>
+            <Entry x:Name="PasswordEntry" Text="{Binding Password}" Placeholder="Password" IsPassword="True"/>
+
+            <Button Text="Login" Command="{Binding SubmitCommand}"/>
+            <Label x:Name="MesageLabel"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
