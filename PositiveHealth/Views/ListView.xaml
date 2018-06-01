@@ -4,6 +4,10 @@
              x:Class="PositiveHealth.View.ListView">
     <ContentPage.Content>
         <StackLayout>
+                 <Entry x:Name="FoodEntry" Placeholder="Food" TextColor="Red"/>
+                 <Entry x:Name="LabelEntry" Placeholder="Food Label" TextColor="Red"/>
+                 <Entry x:Name="CalorieEntry" Placeholder="Calories" TextColor="Red"/>
+                 
             <ListView x:Name="ListViewItem" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -13,10 +17,7 @@
                             </ViewCell.ContextActions>
                             <ViewCell.View>
                                 <StackLayout Orientation="Horizontal" Padding="15,10" HorizontalOptions="FillAndExpand">
-                                    <Entry x:Name="FoodEntry" Placeholder="Food" TextColor="Red"/>
-                                    <Entry x:Name="LabelEntry" Placeholder="Food Label" TextColor="Red"/>
-                                    <Entry x:Name="CalorieEntry" Placeholder="Calories" TextColor="Red"/>
-                                    <Button x:Name="PressButton" Clicked="OnAdd" Text="Add" TextColor="Red"/>
+                                    
                                     <Label HorizontalOptions="Start"
                                            VerticalTextAlignment="Center"
                                            Text="{Binding Name}"/>

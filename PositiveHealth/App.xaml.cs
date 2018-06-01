@@ -16,7 +16,8 @@ namespace PositiveHealth
 		{
 			InitializeComponent();
 
-			MainPage = new MapPage();
+			 // Initializes the page type for the main page
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

@@ -26,10 +26,10 @@ namespace PositiveHealth.View
             var enumerator = App.Dbcontroller.GetDBFood();
             if(enumerator == null)
             {
-                App.Dbcontroller.SaveDBFood(new Food { ID = 0, Name = "Orange", Description = "What a surprise, its orange too", Calories = "85" });
-                App.Dbcontroller.SaveDBFood(new Food { ID = 0, Name = "Apple", Description = "A good gift for the teacher.", Calories = "90" });
-                App.Dbcontroller.SaveDBFood(new Food { ID = 0, Name = "Cake", Description = "Yummy", Calories = "280" });
-                App.Dbcontroller.SaveDBFood(new Food { ID = 0, Name = "Hamburger", Description = "MEATY", Calories = "350" });
+                App.Dbcontroller.SaveDBFood(new Food { ID = 0, Name = "Orange", Description = "What a surprise, its orange too", Calories = 85 });
+                App.Dbcontroller.SaveDBFood(new Food { ID = 0, Name = "Apple", Description = "A good gift for the teacher.", Calories = 90 });
+                App.Dbcontroller.SaveDBFood(new Food { ID = 0, Name = "Cake", Description = "Yummy", Calories = 280 });
+                App.Dbcontroller.SaveDBFood(new Food { ID = 0, Name = "Hamburger", Description = "MEATY", Calories = 350 });
                 enumerator = App.Dbcontroller.GetDBFood();
             }
             while(enumerator.MoveNext())
@@ -47,13 +47,6 @@ namespace PositiveHealth.View
             App.Dbcontroller.DeleteDBFood(model.ID);
         }
 
-        private void OnAdd(object sender, System.EventArgs e)
-        {
-            var item = (MenuItem)sender;
-
-            var model = (Food)item.CommandParameter;
-            this.food.Add(model);
-            App.Dbcontroller.SaveDBFood(model);
-        }
+        
     }
 }
